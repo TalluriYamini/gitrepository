@@ -3,8 +3,8 @@ package com.learn.thread;
 public class Lab751 {
 
 	public static void main(String[] args) throws Exception {
-		MyThread t1 = new MyThread();
-		MyThread t2 = new MyThread();
+		MyThread t1 = new MyThread("Yamini");
+		MyThread t2 = new MyThread("hhhh");
 		t1.start();
 		t2.start();
 		Thread t = Thread.currentThread();
@@ -30,6 +30,9 @@ class MyThread extends Thread {
 				e.printStackTrace();
 			}
 		}
+	}
+	MyThread(String tname){
+		super(tname);
 	}
 }
 

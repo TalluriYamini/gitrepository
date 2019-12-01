@@ -5,8 +5,10 @@ public class Lab752 {
 	public static void main(String[] args) throws Exception {
 		MyThread752 t1 = new MyThread752();
 		MyThread752 t2 = new MyThread752();
-		//t1.start();//The method start() is undefined for the type MyThread752
-		//t2.start();//The method start() is undefined for the type MyThread752
+		Thread th1 = new Thread(t1,"yamini");
+		th1.start();//The method start() is undefined for the type MyThread752
+		Thread th2 = new Thread(t2,"jad");
+		th2.start();//The method start() is undefined for the type MyThread752
 		Thread t = Thread.currentThread();
 		for (int i = 0; i < 100; i++) {
 			System.out.println(t.getName() + "-value is : " + i);
