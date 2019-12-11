@@ -4,17 +4,18 @@ public class Lab764 {
 
 	public static void main(String[] args) throws Exception {
 		Hello764 h1=new Hello764();
-		Hello764 h2=new Hello764();
+		//Hello764 h2=new Hello764();
 		Mythread764 th1=new Mythread764(h1);
-		Mythread764 th2=new Mythread764(h2);
+		Mythread764 th2=new Mythread764(h1);
 		th1.start();th2.start();
 	}
 }
 class Mythread764 extends Thread{
-	Hello764 h=null;
+	Hello764 h;
 	public Mythread764( Hello764 h) {
 	this.h=h;
 	}
+	@Override
 	public void run(){
 		h.show();
 	}

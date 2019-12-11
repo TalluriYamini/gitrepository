@@ -25,7 +25,7 @@ class Mythread766 extends Thread {
 }
 
 class Hello766 {
-	void show() {
+	synchronized static void show() {
 		Thread th = Thread.currentThread();
 		for (int i = 0; i < 5; i++) {
 			System.out.println(th.getName() + " -show: " + i );

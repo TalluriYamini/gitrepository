@@ -8,7 +8,7 @@ class Stack771 {
 	public synchronized void push(int x) {
 		if (flag) {
 			try {
-				wait();
+				wait(0);
 			} catch (Exception e) {
 				System.out.println(e);
 			}
@@ -43,8 +43,7 @@ class A771 implements Runnable{
 	Stack771 st=null;
 	A771( Stack771 st, String name){
 		this.st=st;
-		Thread t1=new Thread(this,name);
-		t1.start();
+		
 	}
 	public void run() {
 		int a=1;
@@ -57,8 +56,7 @@ class B771 implements Runnable{
 	Stack771 st=null;
 	public B771(Stack771 st,String name) {
 	this.st=st;
-	Thread t2=new Thread(this,name);
-	t2.start();
+	
 	}
 	public void run() {
 		for (int i = 0; i < 7; i++) {
@@ -73,6 +71,11 @@ public class Lab771 {
 		Stack771 st=new Stack771();
 		B771 obj2= new B771(st, "B");
 		A771 objq= new A771(st, "A");
+		Thread t1=new Thread(obj2);
+		
+		Thread t2=new Thread(objq);
+		t2.start();
+		t1.start();
 		
 	}
 }

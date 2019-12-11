@@ -31,7 +31,7 @@ class Hello769 {
 		Thread th = Thread.currentThread();
 		for (int i = 0; i < 5; i++) {
 			try {
-			wait(1000);
+			//wait(1000);
 			//al.wait(1000);
 			System.out.println(th.getName() + " -show: " + i+"\t"+this);
 		

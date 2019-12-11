@@ -4,9 +4,9 @@ public class Lab768 {
 
 	public static void main(String[] args) throws Exception {
 		Hello768 h1 = new Hello768();
-		Hello768 h2 = new Hello768();
+		//Hello768 h2 = new Hello768();
 		Mythread768 th1 = new Mythread768(h1);
-		 Mythread768 th2 = new Mythread768(h2);
+		 Mythread768 th2 = new Mythread768(h1);
 		th1.start();
 		 th2.start();
 	}

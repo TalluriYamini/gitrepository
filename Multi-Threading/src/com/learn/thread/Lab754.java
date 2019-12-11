@@ -11,7 +11,7 @@ public class Lab754 {
 class MyThread754 extends Thread {
 	
 	MyThread754(){
-		//start();
+		start();
 		Thread t= new Thread(this);
 		t.start();
 	}
