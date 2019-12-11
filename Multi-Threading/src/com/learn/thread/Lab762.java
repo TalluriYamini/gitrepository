@@ -4,13 +4,17 @@ public class Lab762 {
 
 	public static void main(String[] args) throws Exception {
 		MyThread762 th=new MyThread762();
+		System.out.println(th.hashCode());
 		Thread t1=new Thread(th);
+		System.out.println(t1.hashCode());
 		System.out.println(t1.getState());
-		t1.start();
+		
 		Thread.sleep(500);
 		System.out.println(t1.getState());
+		t1.start();
 		Thread.sleep(5000);
 		System.out.println(t1.getState());
+	
 	}
 }
 
@@ -21,7 +25,8 @@ class MyThread762 extends Thread {
 		for (int i = 0; i <10; i++) {
 			System.out.println(th.getName()+"-value is: "+i+"\t"+th.getState());
 		try{
-			Thread.sleep(500);
+			Thread.sleep(10000);
+			System.out.println(th.getState());
 		}catch(Exception e){
 			e.printStackTrace();
 		}

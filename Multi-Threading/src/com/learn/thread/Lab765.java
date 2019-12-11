@@ -4,11 +4,11 @@ public class Lab765 {
 
 	public static void main(String[] args) throws Exception {
 		Hello765 h1 = new Hello765();
-		Hello765 h2 = new Hello765();
+		//Hello765 h2 = new Hello765();
 		Mythread765 th1 = new Mythread765(h1);
-		//Mythread765 th2 = new Mythread765(h2);
+		Mythread765 th2 = new Mythread765(h1);
 		th1.start();
-		//th2.start();
+		th2.start();
 	}
 }
 
