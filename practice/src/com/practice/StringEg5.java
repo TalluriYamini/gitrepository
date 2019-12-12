@@ -11,6 +11,7 @@ public class StringEg5 {
 		String[] sarr = s.split(" ");
 		String temp="";
 		for (String i : sarr) {
+			
 			if(i.startsWith("\"") && i.endsWith("\"")) {
 				System.out.println(i);
 			}else if (i.startsWith("\"")) {
