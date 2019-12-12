@@ -16,7 +16,7 @@ class Hello723{
 		int a= 0;
 		try {
 			System.out.println("try block begins: "+a);
-			a=10/4;
+			a=10/0;
 			System.out.println("try block ends: "+a);
 			return a;
 		} catch (ArithmeticException e) {
