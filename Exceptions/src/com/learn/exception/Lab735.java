@@ -10,6 +10,7 @@ public class Lab735 {
 			//Unreachable catch block for 
 		//CloneNotSupportedException. This exception 
 		//is never thrown from the try statement body
+		//CloneNotSupportedException is checked exception(compile time exception)
 	
 	}
 }

@@ -9,7 +9,8 @@ public class Lab740 {
 	
 		try{
 			StudentService740 serv=new StudentService740();
-			serv.getNameBySid(null);
+			String str = serv.getNameBySid("JLC-098");
+			System.out.println(str);
 		}catch(Exception e){
 			e.printStackTrace();
 		}

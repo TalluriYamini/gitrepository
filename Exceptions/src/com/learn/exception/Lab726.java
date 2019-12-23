@@ -1,11 +1,10 @@
 package com.learn.exception;
 
-
 public class Lab726 {
 
 	public static void main(String[] args) {
 		System.out.println("Main Starts");
-		int r=new Hello726().show();
+		int r = new Hello726().show();
 		System.out.println("Main: "+r);
 		System.out.println("Main ends");
 	}

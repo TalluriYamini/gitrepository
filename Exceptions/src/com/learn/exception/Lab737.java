@@ -11,7 +11,7 @@ public class Lab737 {
 			StudentService serv=new StudentService();
 			//nm=serv.getNameBySid(null);
 			//nm=serv.getNameBySid("");
-			//nm=serv.getNameBySid("JLC-088");
+			nm=serv.getNameBySid("JLC-088");
 			nm=serv.getNameBySid("JLC-099");
 			System.out.println("Name: "+nm);
 		}catch(Exception e){
