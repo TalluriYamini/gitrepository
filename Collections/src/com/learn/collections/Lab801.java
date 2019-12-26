@@ -22,7 +22,7 @@ class Lab801 {
 			if (obj.equals("Nivas"))
 				lit.remove();
 			else if (obj.equals("Java"))
-				lit.set("Core Java");
+				lit.set("Core Java");//replace the obj with current index
 			else if (obj.equals("JSP"))
 				lit.add("Servlet");
 		}

@@ -14,23 +14,23 @@ class Lab813 {
 		ts.add(4);ts.add(20);
 		System.out.println("**pollFirst/Last**");
 		System.out.println(ts);//[3, 4, 5, 7, 9, 10, 11, 20]
-		System.out.println(ts.pollFirst());//3
+		System.out.println(ts.pollFirst());//3 first index remove
 		System.out.println(ts);//[4, 5, 7, 9, 10, 11, 20]
-		System.out.println(ts.pollLast());//20
+		System.out.println(ts.pollLast());//20 last index remove
 		System.out.println(ts);//[4, 5, 7, 9, 10, 11]
 		System.out.println("***lower()<***");
-		System.out.println(ts.lower(8));//7
+		System.out.println(ts.lower(8));//7 // less than given element - 3 4 5 7 returns greatest element
 		System.out.println(ts.lower(2));//null
 		
 		System.out.println("***Higher()>***");
-		System.out.println(ts.higher(8));//9
+		System.out.println(ts.higher(8));//9 // greater than given element - 9 10 11 20 returns least element
 		System.out.println(ts.higher(50));//null
 		System.out.println(ts.higher(3));//4
 		System.out.println("**8ceiling()>=***");
-		System.out.println(ts.ceiling(8));//9
-		System.out.println(ts.ceiling(12));//null
+		System.out.println(ts.ceiling(8));//9 greater than or equal to the given element - 9 10 11 20 - returns least element
+		System.out.println(ts.ceiling(12));//null need to be a set of element
 		System.out.println("***floor()<=");
-		System.out.println(ts.floor(8));//7
+		System.out.println(ts.floor(8));//7 less than or equal to the given element - 3 4 5 7 -returns greatest element
 		System.out.println(ts.floor(3));//null
 		
 		
