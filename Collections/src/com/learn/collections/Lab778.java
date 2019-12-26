@@ -16,7 +16,7 @@ class Lab778 {
 		Enumeration en=v.elements();
 		while (en.hasMoreElements()) {
 			Object object = (Object) en.nextElement();
-			//System.out.println(obj);
+			 	 System.out.println(object);
 			//obj cannot be resolved to a variable
 		}
 	}

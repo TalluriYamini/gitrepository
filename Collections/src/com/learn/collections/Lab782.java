@@ -15,7 +15,7 @@ class Lab782 {
 			System.out.println(arr[i]);
 			arr[i]="JLC";
 		}
-		System.out.println(col);
+		System.out.println(col);	System.out.println(arr[0]);
 	}
 }
 

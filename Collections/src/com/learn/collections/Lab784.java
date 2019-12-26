@@ -2,6 +2,7 @@ package com.learn.collections;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 
 class Lab784 {
@@ -16,7 +17,16 @@ class Lab784 {
 		col2.add("JSP");
 		System.out.println(col2+"\t"+col2.size());
 		col.add(col2);
+		for(Object c :col) {
+			System.out.println(c);
+			
+		}
 		System.out.println(col+"\t"+col.size());
+		ArrayList<String> l = new ArrayList<String>();
+		l.add("a");
+		ArrayList<String> l2 = new ArrayList<String>();
+		l2.add("b"); l2.add("c");
+		l.addAll(l2);
 	}
 }
 
