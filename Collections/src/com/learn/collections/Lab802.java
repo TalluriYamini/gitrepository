@@ -16,13 +16,13 @@ class Lab802 {
 		list.add("JSP");
 		ListIterator lit = list.listIterator();
 		System.out.println("Forward Order");
-		while (lit.hasNext()) {
+		while (lit.hasNext()) { // left to right
 			int indx=lit.nextIndex();
 			Object obj=lit.next();
 			System.out.println(indx+"\t"+obj);
 		}
 		System.out.println("Reverse Order");
-		while (lit.hasPrevious()) {
+		while (lit.hasPrevious()) {//right to left
 			int indx=lit.previousIndex();
 			Object obj=lit.previous();
 			System.out.println(indx+"\t"+obj);
