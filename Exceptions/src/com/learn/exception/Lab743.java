@@ -8,13 +8,13 @@ public class Lab743 {
 		JLCResource743 res1=null;
 		JLCResource743 res2=null;
 		//try(
-			res1=new JLCResource743(1);
-			res2= new JLCResource743(2);
+			//res1=new JLCResource743(1);
+			//res2= new JLCResource743(2);
 		//){	
 		//statement
 		//}
 		//catch(Exception e){
-			//System.out.println(e);
+		//System.out.println(e);
 		//}
 		System.out.println("Main Ends");
 		//Multiple markers at this line
